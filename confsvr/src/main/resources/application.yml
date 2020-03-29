@@ -1,0 +1,22 @@
+#
+#   This is the application-git configuration for a configuration service.
+#
+#       -  A configuraton service that uses a git-based repository to read the files from.
+#
+#
+####################################
+# Server git solution
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      server:
+        encrypt.enabled: false
+        git:
+          uri: https://github.com/tj-spring/config-server
+          searchPaths: assetservice,organizationservice
+          username: tj-spring
+          password: SpringB00t
