@@ -6,7 +6,7 @@ The Organization Service in this project supports all basic CRUD operations for 
 to the database microservice. The database is initialize with the schema.sql file.
 The database is a basic postgresql database image deployed with Docker.
 The confsvr microservice sets up configuration settings allowing the microservices to communicate and configuring 
-multiple user profiles for use with the application (dev, prod, and default). The configuration files for asset-service
+multiple user profiles for use with the application (dev, prod, and default). The configuration files for asset-service and organization-service
 profiles are hosted in a GitHub repository, with credentials provided in the config application.yml file.
 THe eurekasvr service enables service discovery for coordination between the services, particularly the organization
 and asset services.
